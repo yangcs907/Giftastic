@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <title>GifTastic!!</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+  <h1 class="display-4">Giftastic!!</h1>
+  <p class="lead">Click on the buttons to get some cool gifs!</p>
+  </div>
+  <div class = "gif_body">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  console.log("hello");
+  var topics = [
+    "football", "basketball", "baseball", "golf"
+  ];
+
+  for (var i = 0; i < topics.length; i++) {
+    $(".gif_body").append("<button>" + topics[i] + "</button>")
+  };
+  </script>
+</body>
+
+</html>
